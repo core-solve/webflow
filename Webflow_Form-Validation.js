@@ -33,7 +33,6 @@ $(document).ready(function () {
       } 
       
       $("#clientEmail").keyup(function (e) {
-        // for after . validation; regex = ^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$
         // in Webflow this regex should also be added to input attribute as pattern = "regex"
       let emailcheck = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if($('#clientEmail').val().match(emailcheck)){
