@@ -33,7 +33,7 @@ $(document).ready(function () {
       } 
       
       $("#clientEmail").keyup(function (e) {
-        // in Webflow this regex should also be added to input attribute as pattern = "regex"
+          // inside webflow this regex should also be added to input attribute as pattern = "regex"
       let emailcheck = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if($('#clientEmail').val().match(emailcheck)){
           document.getElementById("clientEmail").style.borderColor = "skyblue";
