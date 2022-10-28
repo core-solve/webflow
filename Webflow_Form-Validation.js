@@ -48,7 +48,7 @@ $(document).ready(function () {
       });
       
       $("#clientPhone").keyup(function (e) {
-        //for 7 to 15 digit phone number; regex = ^\+?\d{7,15}$
+        //7 to 15 digit phone number; regex = ^\+?\d{7,15}$
         // inside Webflow this regex should also be added to input attribute as pattern = "regex"
         let phonenocheck = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
         if($('#clientPhone').val().match(phonenocheck)){
